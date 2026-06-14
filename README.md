@@ -1,23 +1,23 @@
-# Data Narrative Studio (數據敘事工坊)
+# Data Narrative Studio
 
 ![Data Narrative Studio Banner](./public/screenshot.png)
 
-## 專案簡介
+## Project Overview
 
-**Data Narrative Studio** 是一個以敘事為核心的全棧數據平台，旨在將複雜的數據集、模型執行結果與 AI 洞察轉化為結構化且具備互動性的故事。
+**Data Narrative Studio** is a narrative-driven full-stack data platform designed to transform complex datasets, model execution results, and AI insights into structured, interactive stories.
 
-本專案結合了現代 Web 技術與數據科學工作流，提供從數據導入、ETL 處理、AI 洞察生成到最終故事呈現的完整流程。
+This project combines modern web technologies with data science workflows, providing a complete pipeline from data ingestion and ETL processing to AI insight generation and final story presentation.
 
-## 核心功能
+## Core Features
 
-- 🎨 **敘事故事渲染 (Story Renderer)**: 支援多種區塊（文字、圖表、洞察）的流暢渲染。
-- 📊 **多維數據視覺化**: 整合 ECharts 與 Recharts，提供豐富且互動性強的圖表呈現。
-- 🔍 **數據集瀏覽器 (Dataset Browser)**: 輕鬆探索、過濾並導出數據。
-- 🤖 **AI 洞察整合**: 內置 Python 腳本支持 (ETL, ML, NLP)，自動生成數據趨勢分析。
-- 🛠️ **後台管理系統**: 視覺化編輯故事內容，管理數據流水線 (Pipeline)。
-- 🌓 **主題切換**: 支持深色與淺色模式，並提供流暢的介面互動。
+- 🎨 **Story Renderer**: Supports fluid rendering of multiple block types including text, charts, and insights.
+- 📊 **Multi-dimensional Visualization**: Integrates ECharts and Recharts for rich, interactive data presentation.
+- 🔍 **Dataset Browser**: Easily explore, filter, and export datasets.
+- 🤖 **AI Insight Integration**: Built-in Python script support (ETL, ML, NLP) for automated trend analysis and data reporting.
+- 🛠️ **Admin Dashboard**: Visual editor for story composition and data pipeline management.
+- 🌓 **Theme Support**: Includes dark and light modes with smooth UI interactions.
 
-## 技術棧
+## Tech Stack
 
 - **Frontend**: Next.js 16 (App Router), TypeScript, Tailwind CSS, Framer Motion
 - **UI Components**: Shadcn UI, Lucide React
@@ -26,36 +26,36 @@
 - **Auth**: NextAuth.js (Auth.js)
 - **Data Pipeline**: Python (Scripts for ML/NLP/ETL)
 
-## 快速開始
+## Getting Started
 
-### 1. 環境變數設定
-複製 `.env.example` 並填寫必要的資訊（如 MongoDB URI, NextAuth Secret 等）。
+### 1. Environment Configuration
+Copy `.env.example` and fill in the required information (e.g., MongoDB URI, NextAuth Secret).
 
-### 2. 安裝依賴
+### 2. Install Dependencies
 ```bash
 npm install
 ```
 
-### 3. 啟動開發伺服器
+### 3. Start Development Server
 ```bash
 npm run dev
 ```
 
-### 4. 數據初始化 (選填)
-若需導入範例數據，請確保已配置 Python 環境：
+### 4. Data Initialization (Optional)
+To import sample data, ensure your Python environment is configured:
 ```bash
-# 啟動虛擬環境並執行種子腳本
+# Activate virtual environment and run the seed script
 source venv/bin/activate
 python scripts/python/seed_sample_data.py
 ```
 
-## 專案結構
+## Project Structure
 
-- `/src/app`: Next.js 頁面與 API 路由。
-- `/src/components`: 可複用的 UI 元件與業務邏輯組件。
-- `/src/lib`: 數據模型、工具函式及核心邏輯。
-- `/scripts`: 包含數據處理、AI 分析等 Python 腳本。
+- `/src/app`: Next.js pages and API routes.
+- `/src/components`: Reusable UI components and business logic.
+- `/src/lib`: Data models, utility functions, and core logic.
+- `/scripts`: Python scripts for data processing and AI analysis.
 
 ---
 
-*本專案由 Justin21523 維護。*
+*Maintained by Justin21523.*
