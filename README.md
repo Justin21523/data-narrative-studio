@@ -1,6 +1,6 @@
 # Data Narrative Studio
 
-![Data Narrative Studio Banner](./public/screenshot.png)
+![Data Narrative Studio Banner](public/screenshot.png)
 
 ## Project Overview
 
