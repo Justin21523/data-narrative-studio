@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "demo:dev": "python3 -m http.server 4173 --directory demo-app",
+    "demo:build": "node -e \"require('fs').accessSync('demo-app/index.html')\"",
+    "demo:preview": "python3 -m http.server 4173 --directory demo-app"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
