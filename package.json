@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "demo:dev": "npm --prefix demo-app run dev",
+    "demo:build": "npm --prefix demo-app run build",
+    "demo:preview": "npm --prefix demo-app run preview"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
